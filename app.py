@@ -5,10 +5,10 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import base64
-st.header(":black[Flower Classification Model]")
+st.header(":red[Flower Classification Model]")
 flower_names = ['Daisy', 'Dandelion', 'Rose', 'Sunflower', 'Tulip']
 
-model = load_model('/Users/anushakurra/Flower_recog_Model/Flower_Recog_Model.h5')
+model = load_model('Flower_Recog_Model.h5')
 def set_bg_hack(main_bg):
     '''
     A function to unpack an image from root folder and set as bg.
